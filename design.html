@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+    body {
+        font-family: 'Splash', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('design/gym.jpg');
+        /* height: 2000px; */
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: 0px;
+        /* border: 2px solid green; */
+    }
+    .left img{
+        width: 120px;
+        filter: invert(100%);
+        margin: 10px;
+    }
+    .left div{
+        text-align: center;
+        font-size: 25px;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 30px auto;
+        /* border: 2px solid yellow; */
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 50px;
+        /* border: 2px solid red; */
+    }
+    .navber{
+        display: inline-block;
+    }
+    .navber li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navber li a{
+        color: rgb(4, 0, 255);
+        text-decoration: none;
+        padding: 24px 10px;
+    }
+    .navber li a:hover, .navber li a:active{
+        text-decoration: underline;
+        color:  gray;
+    }
+    .btn{
+        font-family: 'Splash', cursive;
+        margin: 0px 10px;
+        background-color: rgb(6, 237, 141);
+        color: rgb(255, 0, 0);
+        padding: 4px 14pox;
+        border: 2px solid green;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: bisque;
+    }
+    .container{
+        border: 2px solid rgb(255, 255, 255);
+        display: block;
+        margin: 90px 57px;
+        padding: 45px;
+        width: 40%;
+        border-radius: 25px;
+    }
+    .form-class input{
+        text-align: center;
+        display: block;
+        width: 300px;
+        padding: 4px;
+        border: 2px solid black;
+        border-radius: 8px;
+        font-size: 15px;
+        font-family: 'Splash', cursive;
+        margin: 10px auto;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 311px;
+        margin: 32px auto;
+    }
+</style>
+
+<body>
+    <header>
+        <!-- left div for lgog -->
+        <div class="left">
+            <img src="design/gym logo.png" alt="">
+            <div>Raghu's GYM</div>
+        </div>
+        <!-- mid div box for navber -->
+        <div class="mid">
+            <ul class="navber">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right div box for buttons -->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Mail us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best GYM in Medinipur now</h1>
+        <form action="noaction.php">
+            <div class="form-class">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-class">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-class">
+                <input type="text" name="" placeholder="Enter your Blood-gorup">
+            </div>
+            <div class="form-class">
+                <input type="text" name="" placeholder="Enter your Hight">
+            </div>
+            <div class="form-class">
+                <input type="text" name="" placeholder="Enter your Mobile Number">
+            </div>
+            <div class="form-class">
+                <input type="text" name="" placeholder="Enter your E-mail ID">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
